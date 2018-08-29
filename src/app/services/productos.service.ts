@@ -70,7 +70,7 @@ export class ProductosService {
 
       const tituloLower = prod.titulo.toLocaleLowerCase();
 
-      if ( prod.categoria.indexOf( termino ) >= 0 || tituloLower.indexOf( termino )) {
+      if ( prod.categoria.indexOf( termino ) >= 0 || tituloLower.indexOf( termino ) >= 0 ) {
         this.productosFiltrado.push ( prod );
       }
     });
